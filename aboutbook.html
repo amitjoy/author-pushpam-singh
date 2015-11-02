@@ -1,0 +1,82 @@
+<!--
+	Created by Amit Datta
+	For more information log on to http://amitdatta.blogspot.in
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/base.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Dynalight' rel='stylesheet' type='text/css'>
+	<link href="img/favicon.png" rel="shortcut icon">
+	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script language="javascript" src="js/modal.popup.js"></script>
+	<script language="javascript">
+
+	    $(document).ready(function() {
+	            
+			//Change these values to style your modal popup
+			var align = 'center';									//Valid values; left, right, center
+			var top = 25;
+			var width = 700; 										//Use an integer (in pixels)
+			var padding = 10;										//Use an integer (in pixels)
+			var backgroundColor = '#FFFFFF'; 						//Use any hex code
+			var source = 'summary.html'; 							//Refer to any page on your server, external pages are not valid e.g. http://www.google.co.uk
+			var borderColor = '#333333'; 							//Use any hex code
+			var borderWeight = 4; 									//Use an integer (in pixels)
+			var borderRadius = 5; 									//Use an integer (in pixels)
+			var fadeOutTime = 300; 									//Use any integer, 0 = no fade
+			var disableColor = '#666666'; 							//Use any hex code
+			var disableOpacity = 40; 								//Valid range 0-100
+			var loadingImage = 'img/loading.gif';		//Use relative path from this page
+				
+			//This method initialises the modal popup
+	        $("#modal").click(function() {
+	            modalPopup(align, top, width, padding, disableColor, disableOpacity, backgroundColor, borderColor, borderWeight, borderRadius, fadeOutTime, source, loadingImage);
+	        });
+			
+			//This method hides the popup when the escape key is pressed
+			$(document).keyup(function(e) {
+				if (e.keyCode == 27) {
+					closePopup(fadeOutTime);
+				}
+			});
+			
+	    });
+		
+	</script>
+	<title>Pushpam Singh</title>
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<div class="header">
+				<div class="authortext">
+					Pushpam Singh
+				</div>
+				<div class="mainmenu">
+					<ul>
+						<a href="index.html"><li>Home</li></a>
+						<a href="#"><li class="current">About Book</li></a>
+						<a href="about.html"><li>About Author</li></a>
+						<a href="download.html"><li>Download</li></a>
+						<a href="contact.html"><li>Contact</li></a>
+						<a target="_blank" href="#"><li>Write Review</li></a>
+						<a href="buy.html"><li>Buy it now!</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<div class="aboutbook">
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/dxytyRy-O1k" frameborder="0" allowfullscreen></iframe>
+					<div class="booksummary">
+						<p>It is the beginning of life on earth. Life sprouts in the navel of KAUSAR; a land blessed with contours and landscapes. As life opens its eyes in the backdrop of silence and darkness, 'Heart of Kausar' also the narrator finds herself in a dark arena. Her disappointment about the place soon turns into fear and anxiety. But before the disaster stars appear in the sky and she decides to wait.</p>
+						<p>Change in the flavor of colors on east further cheers her up. Happiness returns to her. She enjoys the Redglory celebration and appreciates the bonding between Souls of Nature. As she enjoys the introduction of benevolent shades in her life, her Mind shifts her focus to KAVI, the protagonist.</p>
+						<p>Kavi is sad. Heart of Kausar, closely follows Kavi. One night, Kavi gets up to a knock on his heart. He looks around but returns clueless. Kavi expresses his feelings in the form of poetry. Next morning he gets up early and looks for his dream but soon convinces himself that she is just an illusion of his heart.</p>
+						<p style="text-align: right;"><input type="submit" class="summarybutton" id="modal" value=">> Read More" /></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

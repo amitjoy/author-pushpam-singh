@@ -1,0 +1,276 @@
+/*
+ * This is an original work of Amit Datta
+ * HTML, CSS, javaScript and PHP Developer
+ * Pursuing Mechanical Engineering at National Institute of Technology Durgapur
+ * Anyone is free to share or use this code or its part
+ * Provided this part of the comment is left untouched and put in the header wherever required
+ * For more information log on to http://amitdatta.blogspot.in
+ */
+
+ /* Generic styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+	font-size: 13px;
+}
+body {
+	background: url(../img/back.jpg);
+}
+a,a:visited {
+	text-decoration: inherit;
+	color: rgba(100,100,255,1);
+	font-size: inherit;
+}
+
+/* Wrapper and container to position the main div */
+
+.container {
+	position: absolute;
+  	top: 50%;
+  	left: 0px;
+  	width: 100%;
+  	height: 1px;
+  	overflow: visible;
+}
+.wrapper {
+	width: 1000px;
+  	height: 500px;
+  	margin-left: -500px;
+  	position: absolute;
+  	top: -250px;
+  	left: 50%;
+  	box-shadow: 2px 2px 10px #000;
+  	background: rgba(255,255,255,0.75);
+  	border-radius: 2px;
+}
+
+/* Header style */
+
+.header {
+	height: 48px;
+	border-bottom: 1px solid rgba(48,48,48,0.1);
+}
+
+/* Main menu */
+
+.mainmenu {
+	float: right;
+	margin: 12px 30px 0 0;
+}
+.mainmenu ul {
+	list-style: none;
+}
+.mainmenu ul li {
+	float: left;
+	padding: 3px 10px 3px 10px;
+	border-bottom: 3px solid rgba(0,0,0,0);
+}
+.mainmenu ul li:hover {
+	border-bottom: 3px solid #666;
+	-webkit-transform: translateY(5px);
+	-webkit-transition: all 500ms ease;
+	-moz-transform: translateY(5px);
+	-moz-transition: all 500ms ease;
+	-o-transform: translateY(5px);
+	-o-transition: all 500ms ease;
+}
+.mainmenu ul a,a:visited {
+	color: #000;	
+}
+.current {
+	/*border-bottom: 3px solid #666;*/
+}
+
+/* Special font for author name which replaced the logo */
+
+.authortext {
+	font-family: 'Dynalight', cursive;
+	float: left;
+	margin: 5px 0 0 40px;
+	font-size: 36px;
+}
+
+/* Content Style */
+
+.content {
+	clear: both;
+	line-height: 17px;
+	height: 400px;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(48,48,48,0.2);
+}
+.content .coverpic {
+	height: 360px;
+	float: left;
+	padding: 20px;
+}
+.content .coverpic img {
+	height: 360px;
+}
+.content .coverpicdata {
+	height: 360px;
+	padding: 20px 30px 30px 10px;
+	text-indent: 40px;
+	text-align: justify;
+	/*-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	column-count: 2;
+	column-gap: 20px;*/
+}
+.content .coverpicdata .authorpic {
+	padding: 20px;
+	text-align: center;
+	text-indent: 0;
+}
+.content .coverpicdata .authorpic img {
+	height: 175px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.content .coverpicdata p {
+}
+
+/* Footer Style */
+
+.footer {
+	padding: 14px;
+	text-align: center;
+}
+
+
+/* Contact form */
+
+.contact {
+	width: 460px;
+	padding: 20px;
+	margin: 20px 0 0 20px;
+	float: right;
+}
+.contact input[type=text], input[type=submit], textarea, input[type=email] {
+	width: 400px;
+	font-size: 14px;
+	padding: 3px 5px 3px 5px;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	margin-bottom: 15px;
+}
+.contact textarea {
+	height: 200px;
+	resize: none;
+}
+.contact input[type=submit] {
+	width: 100px;
+	background: #CCC;
+}
+
+/* Social Navigation List */
+
+.social {
+	float: left;
+	padding: 20px;
+}
+.social ul {
+	list-style: none;
+}
+.social ul li {
+	clear: both;
+	width: 400px;
+}
+.social ul li img {
+	float: left;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+.social ul li .sub {
+	padding-top: 20px;
+	font-size: 16px;
+}
+
+/* About Page Style*/
+
+.about {
+	padding: 20px;
+}
+.about .pic {
+	float: left;
+	height: 360px;
+	box-shadow: 1px 1px 8px #333;
+	margin-right: 20px;
+}
+.aboutdata {
+	padding: 30px;
+	font-size: 13px;
+	text-indent: 40px;
+	text-align: justify;
+	margin-top: 70px;
+}
+
+/* Buy Page Style */
+
+.buy {
+	padding: 20px 200px 20px 200px;
+}
+.buy table td {
+	width: 300px;
+}
+.buy table td img {
+	float: left;
+	padding-right: 20px;
+	margin-bottom: 10px;
+}
+.buy table td .sub {
+	padding-top: 20px;
+	font-size: 16px;
+}
+
+/* About Book Style */
+
+.aboutbook {
+	padding: 20px;
+}
+.aboutbook iframe {
+	float: left;
+	padding-right: 20px;
+}
+.aboutbook .booksummary {
+	text-align: justify;
+	text-indent: 40px;
+}
+
+/* Summary button */
+.summarybutton {
+	border: none;
+	background: transparent;
+	color: rgba(100,100,255,1);
+	padding: 3px 7px 3px 7px;
+}
+
+/* Home page */
+
+.home {
+	padding: 10px 15px 10px 15px;
+}
+.home table td {
+	padding: 10px;
+	width: 460px;
+	text-align: justify;
+	vertical-align: top;
+}
+.home a,a:visited {
+	color: rgba(100,100,255,1);
+}
+.home .socialset {
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.home .socialset img {
+	height: 48px;
+}
+.home .note {
+	clear: both;
+}
